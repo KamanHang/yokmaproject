@@ -1,0 +1,54 @@
+<section class="h-screen w-full  flex justify-end">
+    <div class="bg-gray-100 w-full  items-center flex justify-center">
+
+        <img src="/login.png" alt="login-img" class="size-100" />
+
+
+    </div>
+
+    <div class=" shadow-lg  items-center flex justify-center lg:w-[60rem]">
+
+        <div class="bg-white h-120 w-100  flex flex-col gap-4 pr-6 pl-6 rounded-xl">
+            <div class="flex items-center justify-center">
+                <img src="/logo.png" alt="login-img" class="size-20" />
+            </div>
+            <div class="flex items-center justify-center">
+                <p>Login into your account</p>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <label for="email">Email:</label>
+
+                <p-iconfield>
+                    <p-inputicon styleClass="pi pi-envelope" />
+                    <input type="text" pInputText placeholder="Email" class="w-full" />
+                </p-iconfield>
+                <label for="Password">Password:</label>
+                <p-iconfield>
+                    <p-inputicon styleClass="pi pi-key" />
+                    <input type="password" pInputText placeholder="Password" class="w-full" />
+                </p-iconfield>
+            </div>
+            <div>
+                <div class="shadow-md">
+                    <p-button [style]="{'backgroundColor': '#fc7301', 'borderColor':'#fc7301', 'width':'100%'}"
+                        label="Login" />
+                </div>
+
+                <p-divider class="text-[#C2C2C2]" align="center" type="solid">
+                    <p class="text-[#C2C2C2]">OR</p>
+                </p-divider>
+                <div>
+                    <p-button variant="outlined" [style]="{ 'borderColor':'#fc7301', 'width':'100%'}"
+                        label="Signup" />
+                </div>
+            </div>
+
+
+         
+
+        </div>
+
+    </div>
+
+</section>
