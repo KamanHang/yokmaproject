@@ -4,6 +4,20 @@ export const routes: Routes = [
     {
         path:'',
         loadComponent: () =>
+            import('./components/navbar/navbar.component').then(
+                (m) => m.NavbarComponent
+            )
+    },
+    {
+        path:'home',
+        loadComponent: () =>
+            import('./components/home/landingpage/landingpage.component').then(
+                (m) => m.LandingpageComponent
+            )
+    },
+    {
+        path:'login',
+        loadComponent: () =>
             import('../app/components/authentication/login/login.component').then(
                 (m) => m.LoginComponent
             )
