@@ -1,13 +1,13 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-    {
-        path:'',
-        loadComponent: () =>
-            import('./components/navbar/navbar.component').then(
-                (m) => m.NavbarComponent
-            )
-    },
+    // {
+    //     path:'',
+    //     loadComponent: () =>
+    //         import('./components/navbar/navbar.component').then(
+    //             (m) => m.NavbarComponent
+    //         )
+    // },
     {
         path:'home',
         loadComponent: () =>
@@ -16,7 +16,7 @@ export const routes: Routes = [
             )
     },
     {
-        path:'login',
+        path:'',
         loadComponent: () =>
             import('../app/components/authentication/login/login.component').then(
                 (m) => m.LoginComponent
